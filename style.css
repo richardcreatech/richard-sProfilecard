@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%; 
+    background-image: url('background.jpg');
+    
+}
+
+.spacedOut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.canvas{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    gap: 15%;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 0 15px whitesmoke;
+    width: 400px;
+    height: 600px;
+    background-color: #eee;
+
+}
+
+main{
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.49);
+    width: 100%;
+    height: 100%;
+}
+
+.coffeecups{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.stats{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+hr{
+    width: 100%;
+    opacity: 0.4;
+}
+
+.stats span{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.profilePic{
+    border: 0.3em solid #eee;
+    width: 100px;
+    height: 100px;
+    border-radius: 40rem;
+    box-shadow: 0 0 15px grey;
+}
+
+.secondSpace{
+    position: fixed;
+    top: 45%;
+    left: 30%;
+    right: 30%;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+    align-items: center;
+}
+
+.someInfo{
+    font-family: sans-serif;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.age{
+    opacity: 0.5;
+    font-size: 24px;
+}
+
+
+.country{
+    opacity: 0.5;
+    font-family: sans-serif;
+}
+
+
+@media(max-width: 1000px){
+    .secondSpace{
+    left: 30%;
+    right: 35%;
+}
+}
+
+@media(min-width: 1000px){
+    body{
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
